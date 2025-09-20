@@ -42,10 +42,10 @@ jobs:
       uses: actions/checkout@v3  # 检出项目代码
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # 使用 v4 或更高版本
       with:
         name: release-build
-        path: ./publish  # 上传编译好的发布文件
+        path: ./publish
 
     - name: Create Release
       id: create_release
