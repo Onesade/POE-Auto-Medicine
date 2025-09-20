@@ -39,10 +39,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2  # 检出项目代码
+      uses: actions/checkout@v3  # 检出项目代码
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: release-build
         path: ./publish  # 上传编译好的发布文件
