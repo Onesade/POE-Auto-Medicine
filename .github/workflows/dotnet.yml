@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET (如果是.NET 项目，根据需要设置)
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0'  # 选择需要的 .NET 版本
+        dotnet-version: '8.0'  # 选择需要的 .NET 版本
 
     - name: Restore dependencies
       run: dotnet restore  # 恢复依赖
